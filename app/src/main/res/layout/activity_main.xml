@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txtName"
+        android:hint="LASTNAME, FIRSTNAME, MIDDLE NAME"/>
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:hint="ADDRESS (No. Street, MUN., CITY, PROVINCE" />
+    <EditText
+        android:id="@+id/DnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:hint="DATE OF BIRTH" />
+
+    <EditText
+        android:id="@+id/Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_toRightOf="@+id/DnB"
+        android:hint="SEX" />
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_toRightOf="@+id/Sex"
+        android:hint="HT. (cm)" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_toRightOf="@+id/Height"
+        android:hint="WT. (kg)" />
+
+    <EditText
+        android:id="@+id/Nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_toRightOf="@+id/Weight"
+        android:hint="NATIONALITY" />
+
+
+
+    <EditText
+        android:id="@+id/Restriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nationality"
+        android:hint="RESTRICTIONS" />
+
+    <EditText
+        android:id="@+id/Condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nationality"
+        android:layout_toRightOf="@+id/Restriction"
+        android:hint="CONDITIONS" />
+
+    <EditText
+        android:id="@+id/AGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nationality"
+        android:layout_toRightOf="@+id/Condition"
+        android:hint="AGY" />
+
+    <EditText
+        android:id="@+id/Expiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nationality"
+        android:layout_toRightOf="@+id/AGY"
+        android:hint="EXPIRED" />
+
+    <EditText
+        android:id="@+id/LicenseNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Restriction"
+        android:hint="LICENSE NO." />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGO"
+        android:layout_below="@+id/LicenseNo"
+        android:hint="Submit"
+        />
+
+</RelativeLayout>
